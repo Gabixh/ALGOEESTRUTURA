@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>JavaScript Arrays</h1>
+    <h2>The Entries() Method</h2>
+
+    <p>O método entries() retorna um interador com os pares chave/valor de uma matriz:</p>
+    <p id = "demonstração"></p>
+
+    <script>
+        const fruits = ["Banana" , "Orange" , "Apple" , "Mango"];
+        const list = fruits.entries();
+
+        let text = "";
+        for (let x of list) {
+            text += x + "<br>";
+        }
+        document.getElementById("demonstração").innerHTML = text;
+    </script>
+</body>
+</html>

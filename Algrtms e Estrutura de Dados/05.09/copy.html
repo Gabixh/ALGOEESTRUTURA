@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1> Matrizes JavaScript</h1>
+    <h2> O método copyWithin()</h2>
+
+    <p> copyWithin() copia elementos do array para outra posição em um array, sobrescrevendo valores existentes.</p>
+    <p> Copie os dois primeiros elesmentos da matriz para a terceira e quarta posição: </p>
+
+    <p id = "demonstração"></p>
+
+    <script>
+        const frutas = ["Banana" , "Laranja" , "Maça" , "Manga" , "Kiwi" , "Mamão"];
+        document.getElementById("demonstração").innerHTML = frutas.copyWithin(2, 0, 2);
+    </script>
+
+    <p> O método copyWithin() não é suportado no Internet Explorer</p>
+</body>
+</html>

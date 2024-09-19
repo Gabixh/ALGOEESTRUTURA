@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <button onclick="myFunction()">teste</button>
+    <p id = "demonstração"></p>
+    <script>
+        const ages = [3 , 18 , 14 , 19 , 22 , 43 ];
+        function checkAges(age){
+            return age >= 18;
+            document.getElementById("ageToCheck").value;
+        }
+        function myFunction(){
+            document.getElementById("demonstração").innerHTML = ages.find(checkAges);
+        }
+    </script>
+</body>
+</html>

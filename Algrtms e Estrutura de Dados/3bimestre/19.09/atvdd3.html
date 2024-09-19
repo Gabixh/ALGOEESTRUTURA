@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let numAlunos = parseInt(prompt("Digite a quantidade de alunos na sala:"));
+        let aprovados = 0;
+        for (let i = 0; i < numAlunos; i++) {
+            let media = parseFloat(prompt("Digite a média final do aluno " + (i + 1) + ":"));
+            if (media >= 6.0) {
+                aprovados++;
+            }
+        }
+        alert("Quantidade de alunos aprovados: " + aprovados);
+    </script>
+</body>
+</html>
